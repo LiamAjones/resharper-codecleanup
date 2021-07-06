@@ -1,7 +1,7 @@
 FROM mcr.microsoft.com/dotnet/sdk:5.0
 
-RUN dotnet tool install -g JetBrains.ReSharper.GlobalTools
+ENV PATH="/opt/gtk/bin:${PATH}"
 
-RUN export PATH="$PATH:/root/.dotnet/tools"
+RUN dotnet tool install -g JetBrains.ReSharper.GlobalTools
 
 ENTRYPOINT ["jb", "cleanupcode", "--help"]
