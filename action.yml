@@ -1,0 +1,10 @@
+  
+name: "Resharper cleanup"
+author: "Liam Jones"
+description: "Github action for running re-sharper cleanup command"
+branding:
+  icon: 'align-center'
+  color: 'blue'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
