@@ -28,4 +28,4 @@ jobs:
       - name: Resharper cleanup
       # You may pin to the exact commit or the version.
       # uses: LiamAjones/resharper-codecleanup@13b6c964ce4671f46a64cdaf91c49374e3a8fafa
-        uses: LiamAjones/resharper-codecleanup@V6
+        uses: LiamAjones/resharper-codecleanup@V7
