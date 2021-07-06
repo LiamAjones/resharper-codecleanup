@@ -8,8 +8,12 @@ inputs:
   solutionPath:
     description: "File path to the solution or csproj file"
     required: true
+  args:
+      description: "Additional arguments for code cleanup"
+      required: true
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
     - ${{ inputs.solutionPath }}
+    - ${{ inputs.args }}
