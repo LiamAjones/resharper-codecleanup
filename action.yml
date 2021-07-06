@@ -1,5 +1,5 @@
   
-name: "Resharper cleanup"
+name: "LiamAJones-resharper-cleanup"
 author: "Liam Jones"
 description: "Github action for running re-sharper cleanup command"
 branding:
