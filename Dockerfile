@@ -6,4 +6,4 @@ ARG $SOLUTIONPATH
 
 RUN dotnet tool install -g JetBrains.ReSharper.GlobalTools
 
-ENTRYPOINT ["jb", "cleanupcode", $SOLUTIONPATH]
+ENTRYPOINT ["jb", "cleanupcode", "$SOLUTIONPATH"]
