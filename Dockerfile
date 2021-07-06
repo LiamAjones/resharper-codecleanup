@@ -7,5 +7,5 @@ RUN ["chmod", "+x", "/entrypoint.sh"]
 
 RUN dotnet tool install -g JetBrains.ReSharper.GlobalTools
 
-ENTRYPOINT ["sh", "-c", "echo $solution-path"]
+ENTRYPOINT ["sh", "-c", "jb cleanupcode $solution-path"]
 # ENTRYPOINT ["/entrypoint.sh"]
