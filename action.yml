@@ -5,11 +5,11 @@ branding:
   icon: 'align-center'
   color: 'blue'
 inputs:
-  solution-path:
+  solutionPath:
     description: "File path to the solution or csproj file"
     required: true
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.solution-path }}
+    - ${{ inputs.solutionPath }}
