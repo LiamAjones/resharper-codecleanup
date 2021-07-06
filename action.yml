@@ -4,6 +4,10 @@ description: "Github action for running re-sharper cleanup command"
 branding:
   icon: 'align-center'
   color: 'blue'
+inputs:
+  solution-path:
+    description: "File path to the solution or csproj file"
+    required: true
 runs:
   using: 'docker'
   image: 'Dockerfile'
