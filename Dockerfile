@@ -4,4 +4,4 @@ ENV PATH="${PATH}:/root/.dotnet/tools"
 
 RUN dotnet tool install -g JetBrains.ReSharper.GlobalTools
 
-ENTRYPOINT ["jb", "cleanupcode", "--help"]
+ENTRYPOINT ["jb", "cleanupcode", "LiChe.sln"]
